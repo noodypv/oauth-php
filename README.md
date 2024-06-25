@@ -1,14 +1,15 @@
 В качестве основы используется Laravel/Passport
 
 /oauth/authorize:
-Query-параметры:
+(Query-параметры:
     - client_id
     - redirect_uri
     - state
     - response_type
+)
 
 /oauth/token:
-form-data:
+(form-data:
     ```json
     {
         "grant_type": "",
@@ -18,9 +19,10 @@ form-data:
         "client_secret": ""
     }
     ```
+)
 
 /api/user (requires authorization token):
-Response body: 
+(Response body: 
     ```json
     {
         "id": 1,
@@ -28,3 +30,4 @@ Response body:
         "email: "mail@mail.com"
     }
     ```
+)
