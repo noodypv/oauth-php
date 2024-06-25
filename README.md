@@ -1,15 +1,13 @@
-## Overview
-
 В качестве основы используется Laravel/Passport
 
-#/oauth/authorize:
+/oauth/authorize:
 Query-параметры:
     - client_id
     - redirect_uri
     - state
     - response_type
 
-#/oauth/token:
+/oauth/token:
 form-data:
     ```json
     {
@@ -21,7 +19,7 @@ form-data:
     }
     ```
 
-#/api/user (requires authorization token):
+/api/user (requires authorization token):
 Response body: 
     ```json
     {
